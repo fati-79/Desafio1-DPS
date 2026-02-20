@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mariana",
+    "apellido": "Lopez",
+    "telefono": "7389-9443",
+    "favorito": false
+  },
+  {
+    "id": 2,
+    "nombre": "Esmeralda",
+    "apellido": "Martinez",
+    "telefono": "6073-8732",
+    "favorito": true
+  },
+  {
+    "id": 3,
+    "nombre": "Eduardo",
+    "apellido": "Perez",
+    "telefono": "7637-9739",
+    "favorito": false
+  }
+]
