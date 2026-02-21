@@ -1,3 +1,5 @@
+//Importaciones
+
 import { useState } from "react";
 import Contact from "./Contact.js";
 import initialContacts from "../data/contacts.json";
@@ -20,22 +22,22 @@ function ContactList() {
   
 
   if (!regexLetras.test(nombre)) {
-    alert("El nombre solo debe contener letras.");
+    alert("El nombre que debe ingresar, solo debe contener letras.");
     return;
   }
 
   if (!regexLetras.test(apellido)) {
-    alert("El apellido solo debe contener letras.");
+    alert("El apellido que debe ingresar, solo debe conetener letras.");
     return;
   }
 
   if (!regexTelefono.test(telefono)) {
-    alert("El teléfono solo debe contener números.");
+    alert("El teléfono celular que debe ingresar, solo debe contener números.");
     return;
 
   };
   
-
+// Creamos un nuevo objeto contacto
   const newContact = {
     id: contacts.length + 1,
     nombre,
@@ -44,12 +46,15 @@ function ContactList() {
     favorito: false
   };
 
+  // Creamos un nuevo arreglo copiando los contactos anteriores
+  // y agregando el nuevo contacto
   const updatedContacts = [...contacts, newContact];
 
   updatedContacts.sort((a, b) => b.favorito - a.favorito);
 
   setContacts(updatedContacts);
 
+  // Limpiamos los campos del formulario
   setNombre("");
   setApellido("");
   setTelefono("");
@@ -90,7 +95,7 @@ function ContactList() {
   }
 };
 
-
+ // Renderizado del componente
   return (
   <div>
     <h1 className="title">Lista de Contactos</h1>
@@ -115,7 +120,7 @@ function ContactList() {
   placeholder="Teléfono (0000-0000)"
   value={telefono}
   onChange={(e) => {
-    let value = e.target.value.replace(/\D/g, ""); // elimina todo lo que no sea número
+    let value = e.target.value.replace(/\D/g, ""); // Eliminamos cualquier carácter que no sea número
 
     if (value.length > 8) {
       value = value.slice(0, 8);
@@ -146,4 +151,5 @@ function ContactList() {
 );
 }
 
+// Exportamos el componente para poder usarlo en otros archivos
 export default ContactList;
