@@ -12,9 +12,7 @@ body {
   to { opacity: 1; }
 }
 
-/* =========================
-   Titulo
-========================= */
+/*Titulo*/
 
 .title {
   text-align: center;
@@ -42,9 +40,7 @@ body {
   to { width: 70px; }
 }
 
-/* =========================
-   Formulario
-========================= */
+/*Formulario*/
 
 .form {
   display: flex;
@@ -98,9 +94,7 @@ body {
   transform: scale(0.96);
 }
 
-/* =========================
-   Grid de Contactos
-========================= */
+/*Grid de Contactos*/
 
 .contact-container {
   display: grid;
@@ -110,9 +104,7 @@ body {
   max-width: 1200px;
 }
 
-/* =========================
-   Tarjetas
-========================= */
+/*Tarjetas*/
 
 .contact-card {
   background: white;
@@ -150,9 +142,7 @@ body {
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.1);
 }
 
-/* =========================
-   Favoritos
-========================= */
+/*Favoritos*/
 
 .favorite-card {
   background: linear-gradient(135deg, #e0f2fe, #dbeafe);
@@ -182,9 +172,7 @@ body {
   to { transform: scale(1); opacity: 1; }
 }
 
-/* =========================
-   Texto de contacto
-========================= */
+/*Texto de contacto*/
 
 .contact-card h3 {
   margin: 0 0 10px 0;
@@ -198,9 +186,7 @@ body {
   color: #6b7280;
 }
 
-/* =========================
-   Botones de tarjeta
-========================= */
+/*Botones de tarjeta*/
 
 .button-group {
   display: flex;
@@ -228,9 +214,7 @@ body {
   transform: scale(0.95);
 }
 
-/* =========================
-   Responsivo
-========================= */
+/*Responsivo*/
 
 @media (max-width: 768px) {
   .contact-container {
